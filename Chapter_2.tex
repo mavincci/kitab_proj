@@ -1,5 +1,141 @@
 \chapter{System Requirement Specification}
 \section{Background Overview}
-\section{Function Requirement}
+
+Kitab is a mobile application for browsing, downloading/uploading and reading e-books. It also includes a web front-end to manage content and account. Users who publish content control their contents’ access control with allowing how the content could be shared. It maintains information about users like username, email, and information about books like title, author, date of publication etc.
+
+\section{Functional Requirement}
+	\subsubsection{Registering}
+
+	\begin{itemize}
+		\item New users (authors, readers, publishers) can register or create accounts. Users will be divided into readers, authors and publishers.
+		\item Admin have his/her special account.
+	\end{itemize}
+
+	\subsubsection{Login}
+	\begin{itemize}
+		\item Users (authors, readers, publishers, admin) can log into the system with their user name and password.
+	\end{itemize}
+
+	\subsubsection{Update profile}	
+	\begin{itemize}
+		\item Users can change their email, user name, password.
+	\end{itemize}
+
+	\subsubsection{Delete Users}
+	\begin{itemize}
+		\item Administrator can remove or block users from the system
+	\end{itemize}
+
+	\subsubsection{Delete account}
+	\begin{itemize}
+		\item Users can delete their account and leave the system. Their related information such as book order, comment, shopping chart information will be deleted too.
+	\end{itemize}
+
+	\subsubsection{Add and Delete Book}
+	\begin{itemize}
+		\item Users can add or delete books. He/she can add the following information about the book
+	\end{itemize}
+
+	\subsubsection{Upload eBooks}
+	\begin{itemize}
+		\item If the users are publishers or authors, they can upload their property (books) for sale in the system
+	\end{itemize}
+
+	\subsubsection{Book search}
+	\begin{itemize}
+		\item Users can search books by using their title or author.
+	\end{itemize}
+
+	\subsubsection{Preview of books}
+	\begin{itemize}
+		\item Users can review some portion of books like its table of contents and introduction part.
+	\end{itemize}
+
+	\subsubsection{Download books}
+	\begin{itemize}
+		\item Users can download their purchased or free books for offline reading.
+		\item Users can share books according to access methods provided.
+	\end{itemize}
+
+	\subsubsection{Give rating to a book}
+	\begin{itemize}
+		\item Readers can rate a book.
+		\item The system will display the rating of a book and users’ reactions received.
+	\end{itemize}
+
+	\subsubsection{Give comment and feedbacks}
+	\begin{itemize}
+		\item Users can give comment about contents and providers.
+		\item They can reply to comments.
+	\end{itemize}
+
+	\subsubsection{Generate report}
+	\begin{itemize}
+		\item Generate reports about the number of sold books, number of total customers, most sold and liked books by category, total number of books by an author.
+	\end{itemize}
+
 \section{Non-Functional Requirement}
+
+Below are the non-functional attributes that kitab must satisfy to increase the quality.
+
+	\subsubsection{Performance}
+	\begin{itemize}
+		\item The app should be really performant because of the encoding and decoding of the encrypted and compressed content. 
+	\end{itemize}
+
+	\subsubsection{Usability}
+	\begin{itemize}
+		\item Kitabs' both interfaces( the web-client and android app) should be intuitive enough that computer illiterate can use with out confusion.
+		\item New event and notification reaches users in near realtime.
+	\end{itemize}
+
+	\subsubsection{Accessibility}
+	\begin{itemize}
+		\item Kitab's website is accessible in any internet connected device.
+	\end{itemize}
+
+	\subsubsection{Security}
+	\begin{itemize}
+		\item \textbf{Transaction} - money transaction will be held by external api for security.
+		\item \textbf{Copyright} - books that are restricted to be sold will not be accessed outside the application.
+	\end{itemize}
+
+	\subsubsection{Speed}
+	\begin{itemize}
+		\item The system should respond in as minimal time as possible for any request from both the mobile and web-client applications.
+	\end{itemize}
+
+	\subsubsection{Availability}
+	\begin{itemize}
+		\item The system is available 24/7 since the books are downloaded for offline reading.
+		\item The web-client is also accessible 24/7 for devices with internet connection.
+	\end{itemize}
+
 \section{Feasibility Study}
+we have conducted a feasibility study to assess the viability of our project. We have investigated to identify whether conditions are probable for the system to work effectively. The information gathered helps us in determining the extent to which the project can perform successfully.
+\bigskip
+The study assesses the following feasibility studies listed below on Kitab.
+
+	\subsection{Technical feasibility}
+The system we are going to develop (Kitab) includes web-based system and an app for mobile devices. Currently there are many technologies out there to implement this system.
+These are
+
+	\begin{description}
+	\item[Flutter] framework which is used to develop cross platform apps. Including mobile( android, ios and fucsia), web and desktop applications.
+	\item[Node js] runtime environment  for JavaScript makes our task easy to develop the backend of our web based system.
+	\item[React js] JavaScript frontend framework which makes it easy to develop reactive front-end applications.
+	\end{description}
+
+All of them are open source technologies. Related to hardware requirement the publishing enterprises are willing to afford the cost for servers. Having these technologies and resources makes our project technically feasible.
+
+	\subsection{Operational feasibility}
+We have investigated the operational feasibility of our project and arrived at the conclusion that the system will satisfy the users’ requirements as well as the publishers’ business requirements since it supports the functions they are conducting currently and they are expecting from the system.
+
+	\subsection{Economic feasibility}
+The system we are going to develop will reduces the cost needed for printing books since books are distributed digitally through the platform. Additionally, it will increase the number of readers which in turn will increase the profit of the publishers. Since the benefit of the system will outweigh the development cost the system is economically feasible.
+
+	\subsection{Schedule feasibility}
+We have properly arranged schedule which will lead us in the right way. This makes our project schedule feasible.
+
+	\subsection{Behavioral feasibility}
+Most of us are familiar with mobile devices and can browse the internet. The system we are developing will have easy and intuitive interface which doesn't require additional knowledge about navigating the application for any ordinary mobile device user.
