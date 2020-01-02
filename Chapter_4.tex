@@ -6,13 +6,19 @@ In this chapter we will describe the design of the system from components and ar
 \section{System design}
 	\subsection{System decomposition}
 
-Kitab is composed of 4 componenets as shown in the graphic below. In this way the system will be more realizable as different components.
+Kitab is composed of 4 componenets as shown in the graphic below. In this way the system will be more realizable as different components. Figure~\ref{dia_sys_decomposition} shows how we decomposed kitab.
 
+	\begin{figure}[H]
 	\begin{center}
-	\includegraphics[width=10cm]{Diagram/System Decomposition.png}
-	\end{center}
 
-	\subsection{Module Descrition}
+	\tcbox{\includegraphics[width=10cm]{"Diagram/System Decomposition".png}}
+	\caption{System decomposition diagram for kitab}
+	\label{dia_sys_decomposition}
+
+	\end{center}
+	\end{figure}
+
+	\subsection{Module Description}
 
 	\begin{enumerate}
 		\item Content management
@@ -46,19 +52,18 @@ Kitab is composed of 4 componenets as shown in the graphic below. In this way th
 				\item[Controller] - component that controls the system state and interaction with the outside enviroment.\\
 				In our case - the gin web server and buffalo router as a backend.
 			\end{description}
+			The figure~\ref{dia_mvc_arch_pattern} shows how "MVC" architectural pattern is used in the system.
 		\end{description}
 
-		\begin{SCfigure}
+		\begin{figure}[h]
 		\begin{center}
 
-		\includegraphics[width=7cm]{Diagram/MVC.png}
+		\tcbox{\includegraphics[width=7cm]{Diagram/MVC.png}}
+		\caption{MVC architectural pattern for kitab}
+		\label{dia_mvc_arch_pattern}
 
 		\end{center}
-		\end{SCfigure}
-
-
-
-
+		\end{figure}
 
 	\subsection{Component Diagram}
 

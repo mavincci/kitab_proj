@@ -1,20 +1,59 @@
 \subsection{Use-case description}
 
-% % \begin{table}
-% % \begin{center}
-% \begin{tabular}{| l | c |}
-% 	\hline \textbf{Use-case name} & xyz \\
-% 	\hline \textbf{Actor} & xyz \\
-% 	\hline \textbf{Used use-case} & xyz \\
-% 	\hline \textbf{Goal of context} & xyz \\
-% 	\hline \textbf{Pre-condition} & xyz \\
-% 	\hline \textbf{Post-condition} & xyz \\
-% 	\hline \textbf{Exception} & xyz \\
-% 	\hline \textbf{Flow of events} & xyz \\
+\begin{table}
+\begin{center}
+
+\begin{tabularx}{0.8\textwidth}{ | l | X | X | }
+\hline \textbf{Use-case name}
+	& \multicolumn{2}{l |}{Remove content} \\
+\hline \textbf{Actor}
+	& \multicolumn{2}{l |}{Admin, Author, Publisher} \\
+\hline \textbf{Used Use-case}
+	& \multicolumn{2}{l |}{Login} \\
+\hline \textbf{Goal of context}
+	& \multicolumn{2}{l |}{To remove unwanted content from the system} \\
+\hline \multirow{2}{*}{\textbf{Pre-condition}}
+	& \multicolumn{2}{l |}{The actor must have account} \\
+	& \multicolumn{2}{l |}{The actor must log into the system using his/her account} \\
+\hline \textbf{Post-condition}
+	& \multicolumn{2}{l |}{The content will be removed from the system} \\
+\hline \textbf{Exception}
+	& \multicolumn{2}{l |}{ } \\
+\hline \multirow{8}{*}{\textbf{Flow of events}}
+	& \multicolumn{1}{c |}{\textbf{Actor}}
+	& \multicolumn{1}{c |}{\textbf{System}} \\ \cline{2-3}
+	& Actor will browse into the system & Login page will be displayed. \\
+	& Actor will log into the system using his/her account & Homepage will be displayed. \\
+	& Actor will select remove content menu. & The system will display a page containing list of books to select from. \\
+	& The actor will select E-book and order remove. & The system will remove the selected E-book.  \\
+	& & The system will notify the sctor sbout the status of the removal of E-book.\\
+	& & The system will redirect the actor to the home page. \\
+
+\hline
+\end{tabularx}
+\caption{Use-case description for Remove content}
+
+\end{center}
+\end{table}
+
+
+% \begin{table}{H}
+% \begin{center}
+
+% \begin{tabular}{| l | l | l |}
+% 	\hline \textbf{Use-case name}	& \multicolumn{2}{l}{Remove content} \\
+% 	\hline \textbf{Actor}			& \\
+% 	\hline \textbf{Used Use-case}	& xyz \\
+% 	\hline \textbf{Goal of context}	& xyz \\
+% 	\hline \textbf{Pre-condition}	& xyz \\
+% 	\hline \textbf{Post-condition}	& xyz \\
+% 	\hline \textbf{Exception}		& xyz \\
+% 	\hline \textbf{Flow of events}	& xyz \\
 % 	\hline
 % \end{tabular}
-% % \end{center}
-% % \end{table}
+
+% \end{center}
+% \end{table}
 
 
 
@@ -22,11 +61,11 @@
 \begin{adjustwidth}{-2 cm}{}
 \caption{Use case description for Remove  content}
 
-\begin{longtable}{|l|l|}
+\begin{longtable}{|l|l|l|}
 \hline \textbf{Use case name} & Remove content \\
 \hline \textbf{Actor} &  Admin,Author,Publisher \\
 \hline \textbf{Used use case} &Login \\
-\hline  \textbf{Goal of context} & To remove illegal or unwanted  content from the system  \\
+\hline \textbf{Goal of context} & To remove illegal or unwanted  content from the system  \\
 \hline \multirow{2}{*}{ \textbf{Pre-condition}} & 
 	1.The Actor must have account. \\&
 	2.The Actor must log into the system  using his/her account\\
