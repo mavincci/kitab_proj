@@ -20,12 +20,12 @@ Kitab is composed of 4 componenets as shown in the graphic below. In this way th
 
 	\subsection{Module Description}
 
-	\begin{enumerate}
-		\item Content management
-		\item User management
-		\item Kitab service
-		\item Kitab app
-	\end{enumerate}
+	\begin{description}
+		\item[Content management] module handles the logic for managing contents. 
+		\item[User management] module handles the logic for managing users.
+		\item[Kitab service] module handles the loadbalancing and routing for different parts of the whole system.
+		\item[Kitab app] module serves as an interface of the system to the user.
+	\end{description}
 
 \section{Architecture}
 	\subsection{Architectural Style and Pattern}
@@ -67,7 +67,27 @@ Kitab is composed of 4 componenets as shown in the graphic below. In this way th
 
 	\subsection{Component Diagram}
 
+		\begin{figure}[H]
+		\begin{center}
+
+		\tcbox{\includegraphics[width=\textwidth]{Diagram/Component.png}}
+		\caption{Kitab Component diagram}
+		\label{dia_mvc_cmpnt}
+
+		\end{center}
+		\end{figure}
+
 	\subsection{Deployment Diagram}
+
+		\begin{figure}[H]
+		\begin{center}
+
+		\tcbox{\includegraphics[width=\textwidth]{Diagram/Deployment.png}}
+		\caption{Kitab Deployment diagram}
+		\label{dia_mvc_dplymnt}
+
+		\end{center}
+		\end{figure}
 
 \section{Database design}
 
