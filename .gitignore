@@ -3,3 +3,5 @@
 *.gz
 /Generated/*
 .vscode/*
+Diagram/UI/*
+Diagram/UI/mobile/*
