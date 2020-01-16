@@ -11,11 +11,24 @@
 \usepackage[most]{tcolorbox}
 \usepackage{tabularx}
 
-%\renewcommand{\baselinestretch}{1.5}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linktoc=all,
+    linkcolor=black,
+}
+
+\renewcommand{\baselinestretch}{1.5}
 
 \begin{document}
 
-% \tableofcontents
+% \input{Title_page.tex}
+
+\tableofcontents
+
+\listoftables
+
+\listoffigures
 
 \input{Chapter_1}
 

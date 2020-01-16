@@ -1,5 +1,81 @@
 \subsection{Use-case description}
 
+
+
+% %%%%%%%% Usecase description for Create Account
+% % TODO *************************************
+% \begin{table}[H]
+% \begin{center}
+% 	\begin{tabularx}{0.8\textwidth}{ | l | X | X | }
+% 	\hline \textbf{Use-case name}
+% 		& \multicolumn{2}{l |}{Create Account} \\
+% 	\hline \textbf{Actor}
+% 		& \multicolumn{2}{l |}{Reader, Author} \\
+% 	\hline \textbf{Used Use-case}
+% 		& \multicolumn{2}{l |}{Login} \\
+% 	\hline \textbf{Goal of context}
+% 		& \multicolumn{2}{l |}{} \\
+% 	\hline \multirow{2}{*}{\textbf{Pre-condition}}
+% 		& \multicolumn{2}{l |}{} \\
+% 		& \multicolumn{2}{l |}{} \\
+% 	\hline \textbf{Post-condition}
+% 		& \multicolumn{2}{l |}{} \\
+% 	\hline \textbf{Exception}
+% 		& \multicolumn{2}{l |}{ } \\
+% 	\hline \multirow{8}{*}{\textbf{Flow of events}}
+% 		& \multicolumn{1}{c |}{\textbf{Actor}}
+% 		& \multicolumn{1}{c |}{\textbf{System}} \\ \cline{2-3}
+% 		& & \\
+% 		& & \\
+% 		& & \\
+% 		& & \\
+% 		& & \\
+% 		& & \\
+% 	\hline
+% 	\end{tabularx}
+% 	\caption{Use-case description template}
+% \end{center}
+% \end{table}
+
+
+
+% %%%%%%%% Usecase description for Search Content
+
+% \begin{table}[H]
+% \begin{center}
+% 	\begin{tabularx}{0.8\textwidth}{ | l | X | X | }
+% 	\hline \textbf{Use-case name}
+% 		& \multicolumn{2}{l |}{} \\
+% 	\hline \textbf{Actor}
+% 		& \multicolumn{2}{l |}{} \\
+% 	\hline \textbf{Used Use-case}
+% 		& \multicolumn{2}{l |}{} \\
+% 	\hline \textbf{Goal of context}
+% 		& \multicolumn{2}{l |}{} \\
+% 	\hline \multirow{2}{*}{\textbf{Pre-condition}}
+% 		& \multicolumn{2}{l |}{} \\
+% 		& \multicolumn{2}{l |}{} \\
+% 	\hline \textbf{Post-condition}
+% 		& \multicolumn{2}{l |}{} \\
+% 	\hline \textbf{Exception}
+% 		& \multicolumn{2}{l |}{ } \\
+% 	\hline \multirow{8}{*}{\textbf{Flow of events}}
+% 		& \multicolumn{1}{c |}{\textbf{Actor}}
+% 		& \multicolumn{1}{c |}{\textbf{System}} \\ \cline{2-3}
+% 		& & \\
+% 		& & \\
+% 		& & \\
+% 		& & \\
+% 		& & \\
+% 		& & \\
+% 	\hline
+% 	\end{tabularx}
+% 	\caption{Use-case description for Search Content}
+% \end{center}
+% \end{table}
+
+
+
 %%%%%%%% Usecase description for remove content
 
 \begin{table}[H]
@@ -31,7 +107,7 @@
 		& & The system will redirect the actor to the home page. \\
 	\hline
 	\end{tabularx}
-	\caption{Use-case description for Remove content}
+	\caption{Use-case description for removing content}
 \end{center}
 \end{table}
 
@@ -57,7 +133,7 @@
 		& \multicolumn{2}{l |}{The system will provide the content.} \\
 		& \multicolumn{2}{l |}{The user will download the content} \\
 	\hline \multirow{3}{*}{\textbf{Exception}}
-		& \multicolumn{2}{l |}{\textbf{Insufficient balance}} \\
+		& \multicolumn{2}{l |}{\textbf{Insufficient balance}} \\ \cline{2-3}
 		& \multicolumn{2}{l |}{The system will notify the user to deposit to his.her account.} \\
 		& \multicolumn{2}{l |}{The system will redirect the user to the homepage.} \\
 	\hline \multirow{4}{*}{\textbf{Flow of events}}
@@ -66,49 +142,177 @@
 		& User browses into the system. & Login page will be displayed. \\
 		& User logs into his account. & Homepage containing list of books will be displayed. \\
 		& User presses the download button on the book he wants to download. & \\
+	\hline \multirow{4}{*}{\textbf{Scenario}}
+		& \multicolumn{2}{l |}{\textbf{Download commercial E-book}} \\ \cline{2-3}
+		& User will enters his payment account details. & The system will redirect him/her to payment page. \\
+		& The user will enter to token. & The payment process the payment and return token indicating payment. \\
+		& The user will download the content. & The system will provide the content of the book. \\
+	\hline \multirow{2}{*}{\textbf{Scenario}}
+		& \multicolumn{2}{l |}{\textbf{Download free E-book}} \\ \cline{2-3}
+		& The user will downlosd the content. & The system will provide the content of the E-book. \\
 	\hline
 	\end{tabularx}
-	\caption{Use-case description for Download content}
+	\caption{Use-case description for downloading content}
 \end{center}
 \end{table}
 
 
 
-
-%%%%%%%% Usecase description template
+%%%%%%%% Usecase description for Modify Content
 
 \begin{table}[H]
 \begin{center}
 	\begin{tabularx}{0.8\textwidth}{ | l | X | X | }
 	\hline \textbf{Use-case name}
-		& \multicolumn{2}{l |}{} \\
+		& \multicolumn{2}{l |}{Modify Content} \\
 	\hline \textbf{Actor}
-		& \multicolumn{2}{l |}{} \\
+		& \multicolumn{2}{l |}{Author, Publisher} \\
 	\hline \textbf{Used Use-case}
-		& \multicolumn{2}{l |}{} \\
+		& \multicolumn{2}{l |}{Login} \\
 	\hline \textbf{Goal of context}
-		& \multicolumn{2}{l |}{} \\
-	\hline \multirow{2}{*}{\textbf{Pre-condition}}
-		& \multicolumn{2}{l |}{} \\
-		& \multicolumn{2}{l |}{} \\
+		& \multicolumn{2}{l |}{To modify details about the content of an E-book} \\
+	\hline \multirow{3}{*}{\textbf{Pre-condition}}
+		& \multicolumn{2}{l |}{The actor must have an account.} \\
+		& \multicolumn{2}{l |}{The actor must log into the system uding his/her account.} \\
+		& \multicolumn{2}{l |}{There must be an E-book which responds to the user.} \\
 	\hline \textbf{Post-condition}
-		& \multicolumn{2}{l |}{} \\
+		& \multicolumn{2}{l |}{The details of the E-book will be modified.} \\
 	\hline \textbf{Exception}
 		& \multicolumn{2}{l |}{ } \\
+	\hline \multirow{7}{*}{\textbf{Flow of events}}
+		& \multicolumn{1}{c |}{\textbf{Actor}}
+		& \multicolumn{1}{c |}{\textbf{System}} \\ \cline{2-3}
+		& Actor browses into the system. & Login page will be displayed. \\
+		& Actor will log into the system using his/her account. & The homepage will be displayed. \\
+		& Actor will select modify E-book menu. & The system will display  page containing list of  E-books which corresponds to  the Actor. \\
+		& The Actor will select the E-book he/she wants to modify. & The system will display editor window containing the content of the E-book to be modified. \\
+		& The Actor will modify the content and press save button. & The system will update content of the E-book in the database according to the user modification. \\
+		& & The system will redirect the author to the home page. \\
+	\hline
+	\end{tabularx}
+	\caption{Use-case description for modifying content.}
+\end{center}
+\end{table}
+
+
+%%%%%%%% Usecase description for Upload Content
+
+\begin{table}[H]
+\begin{center}
+	% \begin{tabular}{ | l | p{0.3\textwidth} | p{0.3\textwidth} | }
+	\begin{tabularx}{\linewidth}{ | l | X | X | }
+	% \begin{tabular}{ | l | l | l | }
+	\hline \textbf{Use-case name}
+		& \multicolumn{2}{l |}{Upload content} \\
+	\hline \textbf{Actor}
+		& \multicolumn{2}{l |}{Author, Publisher} \\
+	\hline \textbf{Used Use-case}
+		& \multicolumn{2}{l |}{Login} \\
+	\hline \textbf{Goal of context}
+		& \multicolumn{2}{l |}{To upload E-book to the system} \\
+	\hline \multirow{2}{*}{\textbf{Pre-condition}}
+		& \multicolumn{2}{l |}{The actor must have an account.} \\
+		& \multicolumn{2}{l |}{The actor must log into the system using his/her account.} \\
+	\hline \textbf{Post-condition}
+		& \multicolumn{2}{l |}{An E-book will be uploaded to the system.} \\
+	\hline \multirow{4}{*}{\textbf{Exception}}
+		& \multicolumn{2}{l |}{\textbf{Author selects file that is not valid.}} \\
+		& \multicolumn{2}{l |}{The system will notify the actor about the situation.} \\
+		& \multicolumn{2}{l |}{The system will offer the actor a choice whether to upload another file of go to homepage.} \\
+		& \multicolumn{2}{l |}{The system will redirect the author to homepage or openfile chooser based on actor's choice.} \\
 	\hline \multirow{8}{*}{\textbf{Flow of events}}
 		& \multicolumn{1}{c |}{\textbf{Actor}}
 		& \multicolumn{1}{c |}{\textbf{System}} \\ \cline{2-3}
-		& & \\
-		& & \\
-		& & \\
-		& & \\
-		& & \\
-		& & \\
+		& Actor will browse into the system &  Log in page will be dis-played. \\
+		& Actor will log into the system using his/her account & The homepage will be dis- played. \\
+		& Actor will select upload content menu. & The system will display file chooser \\
+		& The Actor will select a file and order upload of content. &  The system will convert the file to a format that is selected for the system \\
+		& & The system will store the content in the database. \\
+		& & The system show status of upload. \\
+		& & The system will redirect the Actor to the home page. \\
 	\hline
+	% \end{tabular}
 	\end{tabularx}
-	\caption{Use-case description template}
+	\caption{Use-case description for uploading content}
 \end{center}
 \end{table}
+
+
+
+%%%%%%%% Usecase description for Add Publisher
+
+\begin{table}[H]
+\begin{center}
+	\begin{tabularx}{0.8\textwidth}{ | l | X | X | }
+	\hline \textbf{Use-case name}
+		& \multicolumn{2}{l |}{Add Publisher} \\
+	\hline \textbf{Actor}
+		& \multicolumn{2}{l |}{Admin} \\
+	\hline \textbf{Used Use-case}
+		& \multicolumn{2}{l |}{Login} \\
+	\hline \textbf{Goal of context}
+		& \multicolumn{2}{l |}{To add publisher to the system.} \\
+	\hline \multirow{2}{*}{\textbf{Pre-condition}}
+		& \multicolumn{2}{l |}{The admin must have his/her unique account.} \\
+		& \multicolumn{2}{l |}{The admin must login using his/her unique account.} \\
+	\hline \textbf{Post-condition}
+		& \multicolumn{2}{l |}{A publisher will be added to the system.} \\
+	\hline \multicolumn{1}{c |}{\textbf{Exception}}
+		& \multicolumn{2}{l |}{\textbf{Publisher already registered to the system.}} \\
+		% & \multicolumn{2}{l |}{The system will inform the admin and offer a choice to cancel registration or to enter again.} \\
+		% & \multicolumn{2}{l |}{The admin will choose to enter again or to cancel registration.} \\
+		% & \multicolumn{2}{l |}{The system will redirect to the add publisher form or to the homepage based on the admin choice.} \\
+	\hline \multirow{7}{*}{\textbf{Flow of events}}
+		& \multicolumn{1}{c |}{\textbf{Actor}}
+		& \multicolumn{1}{c |}{\textbf{System}} \\ \cline{2-3}
+		& Admin browses into the system. & log in page will be dis-played. \\
+		& Admin logs into the system using his/her account. & The homepage will be dis- played. \\
+		& Admin will select add pub- lisher menu. & The system will display form for adding publisher. \\
+		& The Admin will fill in the publisher information in the form and order addition of publisher. & The system will store the publisher’s information to the database \\
+		& & The system will notify the admin about the addition of publisher. \\
+		& & The system will redirect the admin to the home page. \\
+	\hline
+	\end{tabularx}
+	\caption{Use-case description for adding publisher}
+\end{center}
+\end{table}
+
+
+
+% %%%%%%%% Usecase description template
+
+% \begin{table}[H]
+% \begin{center}
+% 	\begin{tabularx}{0.8\textwidth}{ | l | X | X | }
+% 	\hline \textbf{Use-case name}
+% 		& \multicolumn{2}{l |}{} \\
+% 	\hline \textbf{Actor}
+% 		& \multicolumn{2}{l |}{} \\
+% 	\hline \textbf{Used Use-case}
+% 		& \multicolumn{2}{l |}{} \\
+% 	\hline \textbf{Goal of context}
+% 		& \multicolumn{2}{l |}{} \\
+% 	\hline \multirow{2}{*}{\textbf{Pre-condition}}
+% 		& \multicolumn{2}{l |}{} \\
+% 		& \multicolumn{2}{l |}{} \\
+% 	\hline \textbf{Post-condition}
+% 		& \multicolumn{2}{l |}{} \\
+% 	\hline \textbf{Exception}
+% 		& \multicolumn{2}{l |}{ } \\
+% 	\hline \multirow{8}{*}{\textbf{Flow of events}}
+% 		& \multicolumn{1}{c |}{\textbf{Actor}}
+% 		& \multicolumn{1}{c |}{\textbf{System}} \\ \cline{2-3}
+% 		& & \\
+% 		& & \\
+% 		& & \\
+% 		& & \\
+% 		& & \\
+% 		& & \\
+% 	\hline
+% 	\end{tabularx}
+% 	\caption{Use-case description template}
+% \end{center}
+% \end{table}
 
 
 
@@ -149,7 +353,9 @@
 
 \begin{table}[H]
 \begin{center}
-	\begin{tabularx}{0.8\textwidth}{ | l | X | X | }
+	% \begin{tabularx}{0.8\textwidth}{ | l | X | X | }
+	\begin{tabularx}{\linewidth}{ | l | X | X | }
+
 	\hline \textbf{Use-case name}
 		& \multicolumn{2}{l |}{Update account details} \\
 	\hline \textbf{Actor}
@@ -173,15 +379,16 @@
 	\hline \multirow{8}{*}{\textbf{Flow of events}}
 		& \multicolumn{1}{c |}{\textbf{Actor}}
 		& \multicolumn{1}{c |}{\textbf{System}} \\ \cline{2-3}
-		& & \\
-		& & \\
-		& & \\
-		& & \\
-		& & \\
-		& & \\
+		& User browses into the system. & Login page will be displayed. \\
+		&  User will log into the system using his/her account. & The homepage will be displayed. \\
+		&  User will select update ac count menu. & A page asking to enter the previous password will be displayed \\
+		& User will fill in his/her password and confirm modification. & Update account page containing form will be displayed. \\
+		&  User will fill in the form and order updation. & The system will validate the user info. \\
+		& & The system will update the corresponding account in the database. \\
+		& & The system will notify the User about status of modification and redirect the user to homepage. \\
 	\hline
 	\end{tabularx}
-	\caption{Use-case description template}
+	\caption{Use-case description for updating account-details }
 \end{center}
 \end{table}
 
@@ -214,6 +421,16 @@
 		& Actor will log into the system using his/her account. & The homepage will be displayed. \\
 		& Actor will select remove select account. & The system will display a window asking the actor to confirm his/her password. \\
 		& Actor will enter his/her password and confirm removal of his/her account. & Actor will enter his/her password and confirm removal of account. \\
+	\hline \multirow{3}{*}{\textbf{Scenario}}
+		& \multicolumn{2}{c |}{\textbf{'User' removes his/her account.}} \\ \cline{2-3}
+		& Actor browses into the system & Login page will be displayed. \\
+		& Actor will log into the system using his/her account. & The homepage will be displayed. \\
+	\hline \multirow{5}{*}{\textbf{Scenario}}
+		& \multicolumn{2}{c |}{\textbf{Admin removes his/her account.}} \\ \cline{2-3}
+		& & The system will display a page containing a list of accounts to select from. \\
+		& The Admin will select accounts to be deleted and order deletion. & The system will remove the selected accounts from the database. \\
+		& & The system will notify the Admin about the deletion status. \\
+		& & The system will redirect the Admin to the home page. \\
 	\hline
 	\end{tabularx}
 	\caption{Use-case description for Remove account}
@@ -240,7 +457,7 @@
 	\hline \textbf{Post-condition}
 		& \multicolumn{2}{l |}{Actor logs into the system to have access.} \\
 	\hline \multirow{2}{*}{\textbf{Exception}}
-		& \multicolumn{2}{l |}{Actor enters username and password that doesn't match to any account.} \\
+		& \multicolumn{2}{l |}{\textbf{Actor enters username and password that doesn't match to any account.}} \\
 		& \multicolumn{2}{l |}{The system will notify the user to try again or recovery password.} \\
 	\hline \multirow{3}{*}{\textbf{Flow of events}}
 		& \multicolumn{1}{c |}{\textbf{Actor}}

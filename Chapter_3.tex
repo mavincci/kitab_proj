@@ -6,7 +6,7 @@ In this chapter, we are going to use different modelling and diagramming techniq
 We will use modelling techniques listed below
 
 	\begin{description}
-		\item[Scenario based modelling] - by using use-case diagram and activity diagram.
+		\item[Scenario based modelling] - with UML is the technique begins with the creation of different scenarios in order to understand the problem to be solved. Done by using use-case diagram and activity diagram.
 		\item[Behavioural/Dynamic modelling] - by using Sequence diagram and state diagram.
 		\item[Class-based modelling] - by using class diagram.
 	\end{description}
@@ -58,6 +58,15 @@ In this section we will determine and model specific procedures of the system, w
 
 
 \section{Behavioural/Dynamic Modelling}
+
+Behavioural/Dynamic modelling is a system of modeling the dynamic behavior of a system as it is executing. It shows what happens or what is supposed to happen when a system responds to a stimulus from its environment.
+
+These stimuli may be either data or events:
+	\begin{enumerate}
+		\item Data becomes available that has to be processed by the system. The availability of the data triggers the processing.
+		\item An event happens that triggers system processing. Events may have associated data, although this is not always the case.
+	\end{enumerate}
+
 	\subsection{Sequence diagram}
 
 	\input{Chapter_3/Sequence}
@@ -67,5 +76,20 @@ In this section we will determine and model specific procedures of the system, w
 	\input{Chapter_3/State}
 
 \section{Class-Based Modeling}
+
+Structural models of software display the organization of a system in terms of the components that make up that system and their relationships.
+
+\textbf{Class-diagrams} for modeling the static structure of the object classes in a software system are used when developing an object-oriented system model to show the classes in a system and the associations between these classes.
+
 	\subsection{Identifying classes}
 	\subsection{Class diagram}
+	
+		\begin{figure}[t]
+		\begin{center}
+	
+		\tcbox{\includegraphics[angle=270, width=0.9\textwidth]{Diagram/Class Diagram.png}}
+		\caption{Kitab Class diagram}
+		\label{dia_class}
+	
+		\end{center}
+		\end{figure}
