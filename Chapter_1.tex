@@ -114,7 +114,7 @@ Internet has became a great emerging business sector across the world.Internet a
 
 The system we are designing enables peoples to have a book shop in their hands.It stores books on their devices' local storage and in the cloud, which is a safe and central place. This project primarily focuses on peoples who have smart phones with internet access and have the ability to read eBooks, authors who want to sell their book directly to readers and publishers who want the online market. This project work is narrowed to the online book shop and central repository system. In the near future, we aim to extend the system so that it will accommodate each and every book consumers and sellers in the whole of Ethiopia. Our project allows readers to better understand how online shopping works locally and thus empower them to read more. Additionally prevent them from being tired of finding book shops and ratings at a high cost.
 
-It allows all users to rate and give feedback about the content they visited or bought. This will help authors and publishers sell their books with confidence. Readers can get enough information about the content by reading the reviews. It will have a categorical book shelving system for easy browsing, enable reviewing samples before buying, offer suggestions based on the most read and liked books.
+It allows users to rate and give feedback about the content they visited or bought. This will help authors and publishers sell their books with confidence. Readers can get enough information about the content by reading the reviews. It will have a categorical book shelving system for easy browsing. Users will be allowed to preview sample of a content before downloading. The system will offer suggestions based on the most read and liked books.
 
 
 
@@ -122,55 +122,71 @@ It allows all users to rate and give feedback about the content they visited or 
 
 \begin{itemize}
 \item The system does not serve for buying hard copy books like other e-commerce sites have.
-\item The system does not support all local languages and other foreign language other than English.
+\item The system does not support ordering books that hasn't yet been published.
+\item The system have support for only 'Amharic' and 'English' languages.
+\item The system provides recommendations based on reading history of the user.
 \end{itemize}
 
 	\section{Objective}
 		\subsection{General objective}
 
-Our goal is to build a robust and effective system for Ethiopian online eBook market.
+Our goal is to build a usable, robust and effective system for Ethiopian online eBook market which contributes something to the technology stack as well as open new ways to young generation have open access to local knowledge.
 
 		\subsection{Specific objectives}
 
 \begin{itemize}
-
-	\item Understand the feeling of authors, readers and publishers about using the system to be developed
-	\item Understand the current trend of how books are published and distributed
-	\item Collect and analyze data from users’ respective 
-	\item Investigate whether software system is applicable to solve the problem considering political, economic and social issues,
-	\item Collect requirements from the users and analyze them.
-	\item Design a system that will solve the problems that are found in current available system and implement it.
-	\item Test the developed system against the collected requirements.
-	\item Deploy the system and make it available to users
-	\item Increase the awareness and understanding of the online book shop system in Ethiopia.
-	\item Achieve efficient and reasonable regulation of online book shop
-	\item To create a room where customers can view adequate information about books and buy books and sellers can sell their work to their customers.
-	\item Expand the global acceptance of the online book shop
-	\item Assist customers in buying books online
-
+	\item Collect needs of the stakeholders through effective requirement collection technique.
+	\item Understand their needs through proper analysis of the collected requirements.
+   \item Investigate applicability of the system with respect to political, economic and social issues,
+	\item Design the system with respect to the requirements gathered.
+	\item Test the proposed system against the collected requirements.
+   \item Test the system for deficiencies and bugs in development with test driven development and integration tests.
+	\item Deploy the system with a robust and reliable host.	
 \end{itemize}
 
 	\section{Methodologies and technologies}
 		\subsection{Data collection}
 
-It's impossible to develop a software system without clear understanding of the problem domain and the requirements of users of the system. As result we elicit requirements to get a good understanding of the problem in hand.
+It's impossible to develop a software system without clear understanding of the problem domain and the requirements of the stakeholders. As result we elicit requirements to get a good understanding of the problem in hand. Since our project is on online book store, our main area of data collection revolves around discovering how Ethiopian books are being produced and distributed to readers in the country. Having this in mind we used some information gathering techniques.
 
-Since our project is on online book store and selling, our main area of data collection revolves around discovering how Ethiopian books are being produced and distributed to readers in the country. Having this in mind we used some information gathering techniques. The first one is observation. We distributed questionnaires to students, authors and other parts of the society and collected their response to get a good insight of their reading experience, how they access books and even their feeling if the system we are proposing. Consequently, we interviewed authors and publishers about the current system of publishing and distributing books, pros and cons of it, if there is a digital system or they have ever tried to digitalize their work and their feelings if we offer the system. Since we are members of the society, as a reader, we used some experience about the system.
+Those are :-
+
+\begin{enumerate}
+\item Observation, since we are members of the society, as a reader, we used some our past experiences about the system.
+\item We distributed questionnaires to students, authors and other parts of the society and collected their response to get a good insight of their reading experience, how they access books and even their feeling if the system we are proposing.
+\item we interviewed authors and publishers about the current system of publishing and distributing books, pros and cons of it, if there is a digital system or they have ever tried to digitalize their work and their feelings about out new system. 
+\end{enumerate}
+
+
+During this time there were peoples, we will like to thank, who helped us with interview and setting up events for meeting.  
+
+\begin{enumerate}
+\item Author Mrs. Yezina Worku - Manager of Ethiopian authors association
+\item Mr. Ashenafi Taye - Author and Teacher at Addis Abab Science and Technology University
+\item Ms. Betelhem Nikodimos - Author
+\item Mr. Getachew - from Authors assoication
+\item Mrs. Tateru Moges - manager of the library at National Archives and Library of Ethiopia
+\item Mr. Wolde-Aregay Yigzaw - Microfilm operator at National Archives and Library of Ethiopia
+\item Mr. Esayiyas Misganaw - from IT departement in National Archives and Library of Ethiopia
+\end{enumerate}
+
+During visitations at ``National Archives and Library of Ethiopia'' we were able to see some forms digitization for books that are found in monastries in limited number.
 
 		\subsection{System analysis and design tools}
 
 For this project we used 
 
 \begin{description}
-	\item[MikTex] - a \LaTeX distribution for windows. We used it prepare our document.
-	\item[Enterprise architect] - a professional UML modelling tool. We used it to prepare our design diagrams.
+	\item[MikTex] - a free and opensource \LaTeX, a document typesetting system, distribution for windows. We used it to prepare our main document.
+   \item[Microsoft word] - a proprietary professional document preparation tool. We used it to prepare the questionnaire.
+	\item[Enterprise architect] - a commercial and professional UML modelling tool. We used it to prepare our design diagrams.
 	\item[Visual paradigm] - also a UML modelling tool. We used it to prepare some of our design diagrams.
 	\item[Gantt project] - to prepare our schedule by generating a gantt chart.
 \end{description}
 
 		\subsection{System development tools}
 
-For the implementation part we are planning to use the tools listed below.
+For the implementation part we planned to use the tools listed below.
 \begin{itemize}
 	\item Development tools
 	\begin{description}
@@ -185,7 +201,7 @@ For the implementation part we are planning to use the tools listed below.
 		\item[Javascript with ReactJS] - to develop our web front end for the browser.
 		\item[Dart with Flutter] - new and mature framework to develop cross-platform applications. Developed by google. We use it to develope our mobile client application.
 		\item[Postgresql] - free and open-source database management system. We use it as a backend to all the services.
-		\item[Sqlite] - to store mobile client data on the mobile phone.
+		\item[Sqlite] - free and open-source embeddable database mamagement library. We used it to store mobile client data on the mobile phone.
 	\end{description}
 
 
