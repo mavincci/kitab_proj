@@ -42,10 +42,10 @@ In this section we will determine and model specific procedures of the system, w
 	\subsection{Actor identification}
 
 	\begin{description}
-		\item[Admin] - by using use-case diagram and activity diagram.
-		\item[Publisher] - by using use-case diagram and activity diagram.
-		\item[Reader] - by using Sequence diagram and state diagram.
-		\item[Author] - by using Sequence diagram and state diagram.
+		\item[Admin] - This actor is responsible for managing the system at a higher privilege. Admin can manage content and accounts.
+		\item[Publisher] - Publisher is responsible to upload and remove contents and also give recognition to authors. It is added by the admin.
+		\item[Reader] - Reader is the main user of the system it can download and read contents and also buy them on local devices. And also give rating and review of a content.
+		\item[Author] - Author prepares a content and upload them to the system. It can browse the reviews and rating.
 	\end{description}
 
 	\input{Chapter_3/Use-case-Diag}
@@ -75,6 +75,8 @@ These stimuli may be either data or events:
 
 	\input{Chapter_3/State}
 
+   \pagebreak
+   
 \section{Class-Based Modeling}
 
 Structural models of software display the organization of a system in terms of the components that make up that system and their relationships.
@@ -82,6 +84,19 @@ Structural models of software display the organization of a system in terms of t
 \textbf{Class-diagrams} for modeling the static structure of the object classes in a software system are used when developing an object-oriented system model to show the classes in a system and the associations between these classes.
 
 	\subsection{Identifying classes}
+
+   \begin{itemize}
+   \item{User}
+   \item{Content}
+   \item{PaidContent}
+   \item{Comment}
+   \item{Address}
+   \item{Admin}
+   \item{Publisher}
+   \item{History}
+   \end{itemize}
+   
+   
 	\subsection{Class diagram}
 	
 		\begin{figure}[t]
